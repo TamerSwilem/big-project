@@ -1,0 +1,182 @@
+/*========== Universal Selector ==========*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", Times, serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+pre {
+  white-space: pre-wrap;       /* Preserves spaces/newlines AND allows wrapping */
+  word-wrap: break-word;       /* Older browser support for breaking long words */
+  overflow-wrap: anywhere;    /* Modern way to break unbreakable strings/URLs */
+}
+
+
+
+
+/* ------------------------------
+============  Header  =========== 
+--------------------------------*/
+
+.navBar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, rgb(107, 15, 228), rgb(49, 21, 209));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.navBarLogo{
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-family: "Google Sans";
+  color: white;
+}
+
+.navBarLeftSec{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.navBarSearch{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(116, 108, 233);
+  box-shadow:  0 0 5px black;
+}
+
+.navBarSearch::placeholder{
+  font-family: Poppins;
+  font-size: 1rem;
+}
+
+.navBarRightSec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navBarButtons{
+  display: flex;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.navBarButton{
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-family: Poppins;
+  font-weight: 500;
+  padding: 4px;
+}
+
+.navBarButton:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.navBarRegister{
+  color: white;
+  font-size: 12px;
+}
+
+
+/* ------------------------------
+============  Main  =========== 
+--------------------------------*/
+
+.article{
+  margin-top: 100px;
+  display: flex;
+}
+
+.articleFlex{
+    padding: 20px;
+    padding-left: 40px;
+    width: 70%;
+    background-color: white;
+    width: 100%;
+}
+
+.articleContent{
+    font-family: "Google Sans";
+    font-size: 20px;
+
+}
+
+.articleImage{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.articleRecommendations{
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  padding-top: 20px;
+  width: 400px;
+
+}
+
+.featuredContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.featuredImageContainer img {
+  width: 100%;
+  height: 100%;           
+  object-fit: cover;     
+  border-radius: 8px; 
+}
+
+.featuredTitle{
+  font-size: 1rem;
+  font-family: "Google Sans";
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px){
+  .article{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .featuredFlex{
+    width: 100%;
+    padding: 50px;
+  }
+
+
+
+}

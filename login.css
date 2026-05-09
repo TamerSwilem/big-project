@@ -1,0 +1,70 @@
+/*========== Universal Selector ==========*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", Times, serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.heroLogin {
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  min-height: 100vh;         /* full viewport height */
+}
+
+.heroLoginContainer{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgb(208, 145, 245);
+  padding: 30px;
+  border-radius: 8px;
+  width: 30rem;
+}
+
+@media (max-width: 500px) {
+  .heroLoginContainer{
+    margin: 20px;
+    width: 100%;
+  }
+  
+}
+
+.heroLoginInputDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.heroLoginInput{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(208, 145, 245, 0.3);
+  box-shadow:  0 4px 9px rgba(0, 0, 0, 0.2);
+  transition: 200ms;
+}
+
+.heroLoginInput::placeholder{
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+
+.heroLoginInput:focus {
+  border: 2px solid rgb(208, 145, 245);
+  outline: none
+}
+
+.heroLoginInput:active{
+  
+}
+
+.navBarRegister{
+  margin-top: 20px;
+}

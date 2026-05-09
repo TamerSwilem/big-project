@@ -1,0 +1,177 @@
+/*========== Universal Selector ==========*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", Times, serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+
+
+/* ------------------------------
+============  Header  =========== 
+--------------------------------*/
+
+.navBar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, rgb(107, 15, 228), rgb(49, 21, 209));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.navBarLogo{
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-family: "Google Sans";
+  color: white;
+}
+
+.navBarLeftSec{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.navBarSearch{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(116, 108, 233);
+  box-shadow:  0 0 5px black;
+}
+
+.navBarSearch::placeholder{
+  font-family: Poppins;
+  font-size: 1rem;
+}
+
+.navBarRightSec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navBarButtons{
+  display: flex;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.navBarButton{
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-family: Poppins;
+  font-weight: 500;
+  padding: 4px;
+}
+
+.navBarButton:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.navBarRegister{
+  color: white;
+  font-size: 12px;
+}
+
+
+/* ------------------------------
+============  Main  =========== 
+--------------------------------*/
+
+
+/* Filters Side Bar */
+
+.filters {
+  position: fixed;
+  background-color: lightgray;
+  top: 100px; /* how far from the top of the viewport it sticks */
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  padding: 20px ;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterToggle{
+    border: none;
+    background: none;
+    font-size: 29px;
+    color: white;
+}
+
+.filterDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filterLabels{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* Featured Section */
+
+.featured {
+  margin-top: 72px;
+  margin-left: 200px;
+  padding: 60px;
+}
+
+.featuredGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+  gap: 30px;
+}
+
+.featuredContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.featuredImageContainer{
+    width: 40%;
+    aspect-ratio: 16/10;
+    flex-shrink: 0;
+}
+
+.featuredImageContainer img {
+  width: 100%;
+  height: 100%;           
+  object-fit: cover;     
+  border-radius: 8px;
+}
+
+.featuredTitle{
+  font-size: 1rem;
+  font-family: "Google Sans";
+  font-weight: normal;
+  margin-bottom: 10px;
+}

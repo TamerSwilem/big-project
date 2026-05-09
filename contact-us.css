@@ -1,0 +1,229 @@
+/*========== Universal Selector ==========*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", Times, serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+
+
+/* ------------------------------
+============  Header  =========== 
+--------------------------------*/
+
+
+.navBar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, rgb(107, 15, 228), rgb(49, 21, 209));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.navBarLogo{
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-family: "Google Sans";
+  color: white;
+}
+
+.navBarLeftSec{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.navBarSearch{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(116, 108, 233);
+  box-shadow:  0 0 5px black;
+}
+
+.navBarSearch::placeholder{
+  font-family: Poppins;
+  font-size: 1rem;
+}
+
+.navBarRightSec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navBarButtons{
+  display: flex;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.navBarButton{
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-family: Poppins;
+  font-weight: 500;
+  padding: 4px;
+}
+
+.navBarButton:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.navBarRegister{
+  color: white;
+  font-size: 12px;
+}
+
+
+/* ------------------------------
+============  Main  =========== 
+--------------------------------*/
+
+
+
+.contactUsFlex{
+    display: flex;
+    padding: 40px 100px 0 100px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.heroLogin {
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  min-height: 100vh;         /* full viewport height */
+}
+
+.heroLoginContainer{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgb(208, 145, 245);
+  padding: 30px;
+  border-radius: 8px;
+  width: 30rem;
+}
+
+@media (max-width: 500px) {
+  .heroLoginContainer{
+    margin: 20px;
+    width: 100%;
+  }
+  
+}
+
+.heroLoginInputDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.heroLoginInput{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(208, 145, 245, 0.3);
+  box-shadow:  0 4px 9px rgba(0, 0, 0, 0.2);
+  transition: 200ms;
+}
+
+.heroLoginInput::placeholder{
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+
+.heroLoginInput:focus {
+  border: 2px solid rgb(208, 145, 245);
+  outline: none
+}
+
+.heroLoginInput:active{
+  
+}
+
+
+.heroLogin {
+  display: flex;
+}
+
+.heroLoginContainer{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgb(208, 145, 245);
+  padding: 30px;
+  border-radius: 8px;
+  width: 30rem;
+}
+
+@media (max-width: 500px) {
+  .heroLoginContainer{
+    margin: 20px;
+    width: 100%;
+  }
+  
+}
+
+.heroLoginInputDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.heroLoginInput{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(208, 145, 245, 0.3);
+  box-shadow:  0 4px 9px rgba(0, 0, 0, 0.2);
+  transition: 200ms;
+}
+
+.heroLoginInput::placeholder{
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+
+.heroLoginInput:focus {
+  border: 2px solid rgb(208, 145, 245);
+  outline: none;
+}
+
+.contactMessage{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(208, 145, 245, 0.3);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+  transition: 200ms;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contactMessage:focus {
+  border: 2px solid rgb(208, 145, 245);
+  outline: none;
+}
+
+.contactMessage::placeholder {
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
